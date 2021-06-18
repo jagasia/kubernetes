@@ -1,0 +1,36 @@
+https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html
+
+If you do not already have Chocolatey installed on your Windows system, 
+	see Installing Chocolatey. (https://chocolatey.org/install)
+
+Install or upgrade eksctl .
+
+Install the binaries with the following command:	(open cmd as administration************)
+
+	choco install -y eksctl 
+If they are already installed, run the following command to upgrade:
+
+	choco upgrade -y eksctl 
+Test that your installation was successful with the following command.
+
+	eksctl version
+
+
+
+Goto this url after logging into aws management console:
+	https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html
+
+for setting env var for getting ekctl access with aws
+
+to create a cluster:
+-----------------
+	eksctl create cluster --name test-cluster --version 1.17 --region eu-central-1 --nodegroup-name linux-nodes --node-type t2.micro --nodes 2
+
+
+-----------------------
+https://www.youtube.com/watch?v=p6xDCz00TxU&t=505s
+
+
+
+
+
